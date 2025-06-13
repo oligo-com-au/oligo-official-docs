@@ -1,0 +1,12 @@
+{
+  "type": "mdx",
+  "permalink": "/oligo-docs/oligo-docs",
+  "source": "@site/src/pages/oligo-docs.md",
+  "title": "Oligo Docs",
+  "description": "This is a custom page for /oligo-docs",
+  "frontMatter": {
+    "title": "Oligo Docs",
+    "description": "This is a custom page for /oligo-docs",
+    "slug": "/"
+  }
+}

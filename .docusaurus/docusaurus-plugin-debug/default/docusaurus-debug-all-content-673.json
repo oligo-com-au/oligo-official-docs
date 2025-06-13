@@ -1,0 +1,122 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/oligo-docs/docs",
+          "tagsPath": "/oligo-docs/docs/tags",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/xmzhang/myProjects/intelpay/myoligo-api-docs-template-updated/sidebars.js",
+          "contentPath": "/Users/xmzhang/myProjects/intelpay/myoligo-api-docs-template-updated/docs",
+          "contentPathLocalized": "/Users/xmzhang/myProjects/intelpay/myoligo-api-docs-template-updated/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "unversionedId": "index",
+              "id": "index",
+              "title": "Welcome",
+              "description": "Use this documentation to learn how to integrate with MyOligo’s payment APIs.",
+              "source": "@site/docs/index.md",
+              "sourceDirName": ".",
+              "slug": "/",
+              "permalink": "/oligo-docs/docs/",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "index",
+                "title": "Welcome",
+                "slug": "/"
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "PayTo Overview",
+                "permalink": "/oligo-docs/docs/payto"
+              }
+            },
+            {
+              "unversionedId": "payto",
+              "id": "payto",
+              "title": "PayTo API",
+              "description": "PayTo is a real-time payment mechanism that allows businesses to initiate payments from customer bank accounts using secure agreements.",
+              "source": "@site/docs/payto.md",
+              "sourceDirName": ".",
+              "slug": "/payto",
+              "permalink": "/oligo-docs/docs/payto",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "payto",
+                "title": "PayTo API",
+                "sidebar_label": "PayTo Overview"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Welcome",
+                "permalink": "/oligo-docs/docs/"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "index"
+              },
+              {
+                "type": "category",
+                "label": "PayTo API",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "payto"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": "/oligo-docs/blog/tags",
+      "blogTagsPaginated": []
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "mdx",
+        "permalink": "/oligo-docs/",
+        "source": "@site/src/pages/index.md",
+        "title": "Oligo Docs",
+        "description": "This is a custom page for /oligo-docs",
+        "frontMatter": {
+          "title": "Oligo Docs",
+          "description": "This is a custom page for /oligo-docs",
+          "slug": "/"
+        }
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}

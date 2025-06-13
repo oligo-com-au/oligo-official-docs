@@ -1,0 +1,48 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "Welcome",
+        "href": "/oligo-docs/docs/",
+        "docId": "index"
+      },
+      {
+        "type": "category",
+        "label": "PayTo API",
+        "items": [
+          {
+            "type": "link",
+            "label": "PayTo Overview",
+            "href": "/oligo-docs/docs/payto",
+            "docId": "payto"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      }
+    ]
+  },
+  "docs": {
+    "index": {
+      "id": "index",
+      "title": "Welcome",
+      "description": "Use this documentation to learn how to integrate with MyOligo’s payment APIs.",
+      "sidebar": "tutorialSidebar"
+    },
+    "payto": {
+      "id": "payto",
+      "title": "PayTo API",
+      "description": "PayTo is a real-time payment mechanism that allows businesses to initiate payments from customer bank accounts using secure agreements.",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}
