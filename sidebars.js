@@ -4,7 +4,7 @@ module.exports = {
     {
       type: 'category',
       label: 'PayTo API',
-      items: ['payto']
+      items: ['payto-overview', 'payto-webhook']
     }
   ]
 };

@@ -1,5 +1,5 @@
 ---
-id: payto
+id: payto-overview
 title: PayTo API
 sidebar_label: PayTo Overview
 ---
