@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmyoligo_api_docs=self.webpackChunkmyoligo_api_docs||[]).push([[798],{1966:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);
