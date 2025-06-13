@@ -9,8 +9,8 @@
           "badge": false,
           "noIndex": false,
           "className": "docs-version-current",
-          "path": "/oligo-docs/docs",
-          "tagsPath": "/oligo-docs/docs/tags",
+          "path": "/oligo-official-docs/docs",
+          "tagsPath": "/oligo-official-docs/docs/tags",
           "isLast": true,
           "routePriority": -1,
           "sidebarFilePath": "/Users/xmzhang/myProjects/intelpay/myoligo-api-docs-template-updated/sidebars.js",
@@ -25,7 +25,7 @@
               "source": "@site/docs/index.md",
               "sourceDirName": ".",
               "slug": "/",
-              "permalink": "/oligo-docs/docs/",
+              "permalink": "/oligo-official-docs/docs/",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -37,7 +37,7 @@
               "sidebar": "tutorialSidebar",
               "next": {
                 "title": "PayTo Overview",
-                "permalink": "/oligo-docs/docs/payto"
+                "permalink": "/oligo-official-docs/docs/payto"
               }
             },
             {
@@ -48,7 +48,7 @@
               "source": "@site/docs/payto.md",
               "sourceDirName": ".",
               "slug": "/payto",
-              "permalink": "/oligo-docs/docs/payto",
+              "permalink": "/oligo-official-docs/docs/payto",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -60,7 +60,7 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Welcome",
-                "permalink": "/oligo-docs/docs/"
+                "permalink": "/oligo-official-docs/docs/"
               }
             }
           ],
@@ -95,7 +95,7 @@
       "blogPosts": [],
       "blogListPaginated": [],
       "blogTags": {},
-      "blogTagsListPath": "/oligo-docs/blog/tags",
+      "blogTagsListPath": "/oligo-official-docs/blog/tags",
       "blogTagsPaginated": []
     }
   },
@@ -103,13 +103,13 @@
     "default": [
       {
         "type": "mdx",
-        "permalink": "/oligo-docs/",
+        "permalink": "/oligo-official-docs/",
         "source": "@site/src/pages/index.md",
         "title": "Oligo Docs",
-        "description": "This is a custom page for /oligo-docs",
+        "description": "This is a custom page for /oligo-official-docs",
         "frontMatter": {
           "title": "Oligo Docs",
-          "description": "This is a custom page for /oligo-docs",
+          "description": "This is a custom page for /oligo-official-docs",
           "slug": "/"
         }
       }

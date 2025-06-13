@@ -1,23 +1,23 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/oligo-docs/docs",
+      "path": "/oligo-official-docs/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/oligo-docs/docs",
+          "path": "/oligo-official-docs/docs",
           "mainDocId": "index",
           "docs": [
             {
               "id": "index",
-              "path": "/oligo-docs/docs/",
+              "path": "/oligo-official-docs/docs/",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "payto",
-              "path": "/oligo-docs/docs/payto",
+              "path": "/oligo-official-docs/docs/payto",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -25,7 +25,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/oligo-docs/docs/",
+                "path": "/oligo-official-docs/docs/",
                 "label": "index"
               }
             }

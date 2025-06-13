@@ -2,7 +2,7 @@ module.exports = {
   title: 'MyOligo API Docs',
   tagline: 'Integrate MyOligo PayTo API seamlessly',
   url: 'https://oligo-com-au.github.io',
-  baseUrl: '/oligo-docs',
+  baseUrl: '/oligo-official-docs',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/oligo-logo.svg',

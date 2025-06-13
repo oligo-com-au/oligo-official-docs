@@ -6,7 +6,7 @@
   "source": "@site/docs/payto.md",
   "sourceDirName": ".",
   "slug": "/payto",
-  "permalink": "/oligo-docs/docs/payto",
+  "permalink": "/oligo-official-docs/docs/payto",
   "draft": false,
   "tags": [],
   "version": "current",
@@ -18,6 +18,6 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Welcome",
-    "permalink": "/oligo-docs/docs/"
+    "permalink": "/oligo-official-docs/docs/"
   }
 }
