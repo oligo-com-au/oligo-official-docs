@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_site=self.webpackChunkmy_site||[]).push([[4351],{88744:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/oligo-official-docs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
