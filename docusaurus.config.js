@@ -107,6 +107,8 @@ const config = {
           alt: 'Oligo Logo',
           src: 'img/oligo-logo.svg',
         },
+        hideOnScroll: true,
+        // style: 'primary',
         items: [
           {
             type: 'docSidebar',
