@@ -20,7 +20,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://api-docs.oligo.com.au',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/oligo-official-docs/',
@@ -112,23 +112,23 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
-          },
-          {
-            to: '/blog',
-            label: 'Blog',
-            position: 'left'
+            label: 'Developer Guides',
           },
           {
             to: '/api',
-            label: 'API',
+            label: 'API Reference',
             position: 'left'
           },
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   to: '/blog',
+          //   label: 'Blog',
+          //   position: 'left'
+          // },
+          // {
+          //   href: 'https://github.com/facebook/docusaurus',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
