@@ -10,6 +10,24 @@ tags:
     description: Create and query agreements
   - name: Payments
     description: Make payments using an existing agreement
+  - name: Refunds (Beta)
+    description: >
+      Refund existing settled PayTo Payments
+
+
+      ## Beta Release
+
+
+      We're excited to announce that this feature is now in beta! While we'll
+      aim to minimize breaking changes,
+
+      some adjustments may occur as we refine it. Rest assured, we'll notify you
+      of any major changes in advance.
+
+      Access is limited to selected merchants who applied. Your feedback is
+      crucial in helping us improve and stabilize
+
+      the feature so please share your experiences!
   - name: Agreement modification
     description: Modify existing agreements
   - name: Alias Resolution
@@ -3598,10 +3616,10 @@ paths:
         '500':
           description: Internal Server Error
 servers:
-  - description: Zepto Sandbox
-    url: https://api.sandbox.zeptopayments.com
-  - description: Zepto Production
-    url: https://api.zeptopayments.com
+  - description: Oligo Sandbox
+    url: https://api-sandbox.oligo.com.au/v1/
+  - description: Oligo Production
+    url: https://api-prod.oligo.com.au/v1/
 components:
   securitySchemes:
     bearerAuth:
