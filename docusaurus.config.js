@@ -5,8 +5,6 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
-const redocusaurus = require('redocusaurus');
-
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -50,10 +48,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -61,10 +55,6 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -78,12 +68,17 @@ const config = {
     [
       'redocusaurus',
       {
-        // Plugin Options for loading OpenAPI files
+        // https://github.com/rohit-gohri/redocusaurus/blob/main/website/docs/getting-started/Installation.md
+        // openapi: {
+        //   // Folder to scan for *.openapi.yaml files
+        //   path: 'openapi',
+        //   routeBasePath: '/api',
+        // },
         specs: [
           // Pass it a path to a local OpenAPI YAML file
           {
             // Redocusaurus will automatically bundle your spec into a single file during the build
-            spec: './src/openapi.yaml',
+            spec: './openapi/payTo.yaml',
             route: '/api/',
           },
           // You can also pass it a OpenAPI spec URL
@@ -96,10 +91,7 @@ const config = {
         theme: {
           // Change with your site colors
           primaryColor: '#A52BFF',
-        },
-        redocOptions: {
-          hideDownloadButton: true,
-        },
+        }
       },
     ],
   ],
