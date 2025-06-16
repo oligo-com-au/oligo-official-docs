@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_site=self.webpackChunkmy_site||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/oligo-official-docs/blog","blogTitle":"Blog","authorsListPath":"/oligo-official-docs/blog/authors"}')}}]);
