@@ -249,10 +249,6 @@ tags:
       Can be present on a failed payment and give more detail about why the
       payment has failed.
 
-      Certain error codes mean that a payment can be
-      [retried](https://docs.zeptopayments.com/reference/post_payto-payments-payment-uid-retry),
-      as indicated by the 'Retryable' column.
-
 
       |Code|Title|Description|Retryable|
 
@@ -387,10 +383,10 @@ tags:
       |MD01|No Agreement|The NPP Payment Initiation Request did not contain a
       Agreement|False|
 
-      |MD02|Missing Mandatory Information In Agreement|Contact Zepto for more
+      |MD02|Missing Mandatory Information In Agreement|Contact Oligo for more
       information|False|
 
-      |MD20|Agreement Expired|Contact Zepto for more information|True|
+      |MD20|Agreement Expired|Contact Oligo for more information|True|
 
       |MS02|Not Specified Reason Customer Generated|The payment was rejected by
       the Debtor Customer, but no reason was provided|False|
@@ -398,7 +394,7 @@ tags:
       |MS03|Not Specified Reason Agent Generated|The payment was rejected by the
       Responding Participant, but no reason was provided|False|
 
-      |NARR|Narrative|Contact Zepto for more information|True|
+      |NARR|Narrative|Contact Oligo for more information|True|
 
       |NAUT|Not Authorised|The payment contents do not align with the Agreement
       terms|False|
@@ -456,17 +452,16 @@ tags:
       |ZPUNP02|Invalid creditor account|The given creditor account cannot accept
       funds via NPP|False|
 
-      |ZPUNP06|Error resolving alias|Zepto was unable to reach the addressing
+      |ZPUNP06|Error resolving alias|Unable to reach the addressing
       service|False|
 
-      |ZPUNP07|Debtor alias not found|Zepto was unable to resolve the given
-      debtor alias|False|
+      |ZPUNP07|Debtor alias not found|Unable to resolve the given debtor
+      alias|False|
 
-      |ZPUNP08|Creditor alias not found|Zepto was unable to resolve the given
-      creditor alias|False|
+      |ZPUNP08|Creditor alias not found|Unable to resolve the given creditor
+      alias|False|
 
-      |UKNWN|Unknown Error|An unexpected error occured. Reach out to Zepto for
-      more information|False|
+      |UKNWN|Unknown Error|An unexpected error occured.|False|
 
 
       ## Refund Failure Codes
@@ -617,10 +612,10 @@ tags:
       |MD01|No Agreement|The NPP Payment Initiation Request did not contain a
       Agreement|
 
-      |MD02|Missing Mandatory Information In Agreement|Contact Zepto for more
+      |MD02|Missing Mandatory Information In Agreement|Contact Oligo for more
       information|
 
-      |MD20|Agreement Expired|Contact Zepto for more information|
+      |MD20|Agreement Expired|Contact Oligo for more information|
 
       |MS02|Not Specified Reason Customer Generated|The payment was rejected by
       the Debtor Customer, but no reason was provided|
@@ -628,7 +623,7 @@ tags:
       |MS03|Not Specified Reason Agent Generated|The payment was rejected by the
       Responding Participant, but no reason was provided|
 
-      |NARR|Narrative|Contact Zepto for more information|
+      |NARR|Narrative|Contact Oligo for more information|
 
       |NAUT|Not Authorised|The payment contents do not align with the Agreement
       terms|
@@ -683,17 +678,14 @@ tags:
       |ZPUNP02|Invalid creditor account|The given creditor account cannot accept
       funds via NPP|
 
-      |ZPUNP06|Error resolving alias|Zepto was unable to reach the addressing
-      service|
+      |ZPUNP06|Error resolving alias|Unable to reach the addressing service|
 
-      |ZPUNP07|Debtor alias not found|Zepto was unable to resolve the given
-      debtor alias|
+      |ZPUNP07|Debtor alias not found|Unable to resolve the given debtor alias|
 
-      |ZPUNP08|Creditor alias not found|Zepto was unable to resolve the given
-      creditor alias|
+      |ZPUNP08|Creditor alias not found|Unable to resolve the given creditor
+      alias|
 
-      |UKNWN|Unknown Error|An unexpected error occured. Reach out to Zepto for
-      more information|
+      |UKNWN|Unknown Error|An unexpected error occured.|
   - name: Unprocessable Entity (422) Codes
     description: >-
       Comprehensive list of possible error codes that can be returned in a 422
@@ -726,14 +718,12 @@ tags:
       |ZPUNP05|Creditor branch code does not exist|Creditor branch code does not
       exist|
 
-      |ZPUNP06|Error resolving alias|Zepto was unable to reach the addressing
-      service|
+      |ZPUNP06|Error resolving alias|Unable to reach the addressing service|
 
-      |ZPUNP07|Debtor alias not found|Zepto was unable to resolve the given
-      debtor alias|
+      |ZPUNP07|Debtor alias not found|Unable to resolve the given debtor alias|
 
-      |ZPUNP08|Creditor alias not found|Zepto was unable to resolve the given
-      creditor alias|
+      |ZPUNP08|Creditor alias not found|Unable to resolve the given creditor
+      alias|
 
       |ZPUNP09|Alias resolution not enabled|Account not enabled for alias
       resolution services|
@@ -985,9 +975,8 @@ tags:
       limit has been reached for the current period|
   - name: Sandbox Guides
     description: >-
-      A guide to our Sandbox environment
-      (https://api.sandbox.zeptopayments.com/payto) for simulating certain
-      errors and behaviour.
+      A guide to our Sandbox environment for simulating certain errors and
+      behaviour.
 
 
       ## Asynchronous Simulations
@@ -1468,9 +1457,7 @@ paths:
                           failure:
                             code: UKNWN
                             title: Unknown Error
-                            detail: >-
-                              An unexpected error occured. Reach out to Zepto
-                              for more information
+                            detail: An unexpected error occured.
                         type: payto_agreement.suspension_failed
                       - id: aaaaaaaa-0000-0000-0000-000000000029
                         resource_uid: biz_agreement_000123
@@ -1491,9 +1478,7 @@ paths:
                           failure:
                             code: UKNWN
                             title: Unknown Error
-                            detail: >-
-                              An unexpected error occured. Reach out to Zepto
-                              for more information
+                            detail: An unexpected error occured.
                         type: payto_agreement.reactivation_failed
                       - id: aaaaaaaa-0000-0000-0000-000000000027
                         resource_uid: biz_agreement_000123
@@ -1510,9 +1495,7 @@ paths:
                           failure:
                             code: UKNWN
                             title: Unknown Error
-                            detail: >-
-                              An unexpected error occured. Reach out to Zepto
-                              for more information
+                            detail: An unexpected error occured.
                         type: payto_agreement.failed
                       - id: aaaaaaaa-0000-0000-0000-000000000025
                         resource_uid: biz_agreement_000123
@@ -1552,9 +1535,7 @@ paths:
                           failure:
                             code: UKNWN
                             title: Unknown Error
-                            detail: >-
-                              An unexpected error occured. Reach out to Zepto
-                              for more information
+                            detail: An unexpected error occured.
                         type: payto_agreement.cancellation_failed
                       - id: aaaaaaaa-0000-0000-0000-000000000021
                         resource_uid: biz_agreement_000123
@@ -1570,9 +1551,7 @@ paths:
                           failure:
                             code: UKNWN
                             title: Unknown Error
-                            detail: >-
-                              An unexpected error occured. Reach out to Zepto
-                              for more information
+                            detail: An unexpected error occured.
                         type: payto_agreement.amendment_recall_failed
                       - id: aaaaaaaa-0000-0000-0000-00000000001f
                         resource_uid: biz_agreement_000123
@@ -1582,9 +1561,7 @@ paths:
                           failure:
                             code: UKNWN
                             title: Unknown Error
-                            detail: >-
-                              An unexpected error occured. Reach out to Zepto
-                              for more information
+                            detail: An unexpected error occured.
                         type: payto_agreement.amendment_failed
                       - id: aaaaaaaa-0000-0000-0000-00000000001e
                         resource_uid: biz_agreement_000123
@@ -3663,7 +3640,7 @@ components:
     payto.account_identifiers_alias_organisation_identifier:
       type: string
       description: A PayID organisation identifier alias
-      example: Zepto Pty Ltd, Byron Bay NSW
+      example: Oligo org
       pattern: ^[!-@\[-~][ -@\[-~]{0,254}[!-@\[-~]$
     payto.account_identifiers_alias_phone:
       type: string
@@ -3711,7 +3688,7 @@ components:
             Supplied unique identifier for agreement, maximum 64 characters
             containing only unreserved characters as defined in RFC3986. This
             identifier ensures agreement uniqueness between integrator systems
-            and Zepto.
+            and Oligo.
           example: biz_agreement_G7MQWwkQZIP8vbfH
           minLength: 1
           maxLength: 64
@@ -3801,7 +3778,7 @@ components:
         cancel_if_unresolved:
           type: boolean
           description: >-
-            An optional field to indicate whether or not Zepto should auto
+            An optional field to indicate whether or not Oligo should auto
             cancel this agreement if it is not authorized by the debtor by the
             resolution_requested_before point in time. This field must be
             accompanied by the resolution_requested_before attribute and if not,
@@ -4033,7 +4010,7 @@ components:
               type: string
               description: A longer description of the reason or failure
               example: >-
-                Contact Zepto for more information - The requested operation
+                Contact Oligo for more information - The requested operation
                 cannot be performed for the current status of the agreement
             code:
               type: string
@@ -4144,7 +4121,7 @@ components:
             Supplied unique identifier for agreement, maximum 64 characters
             containing only unreserved characters as defined in RFC3986. This
             identifier ensures agreement uniqueness between integrator systems
-            and Zepto.
+            and Oligo.
           example: biz_agreement_G7MQWwkQZIP8vbfH
           minLength: 1
           maxLength: 64
@@ -4274,8 +4251,8 @@ components:
         cancel_if_unresolved:
           type: boolean
           description: >-
-            An optional field to indicate whether or not Zepto should auto
-            cancel this agreement if it is not authorized by the debtor by the
+            An optional field to indicate whether or not we should auto cancel
+            this agreement if it is not authorized by the debtor by the
             resolution_requested_before point in time. This field must be
             accompanied by the resolution_requested_before attribute and if not,
             will result in a 422 response and error code.
@@ -5143,7 +5120,7 @@ components:
                   type: string
                   description: A longer description of the reason or failure
                   example: >-
-                    Contact Zepto for more information - The requested operation
+                    Contact Oligo for more information - The requested operation
                     cannot be performed for the current status of the agreement
                 code:
                   type: string
@@ -5218,7 +5195,7 @@ components:
         published_at:
           type: string
           format: date-time
-          description: When the event was published by Zepto
+          description: When the event was published
           example: '2023-03-07T22:50:40Z'
         resource_uid:
           type: string
@@ -5510,7 +5487,7 @@ components:
                       type: string
                       description: A longer description of the reason or failure
                       example: >-
-                        Contact Zepto for more information - The requested
+                        Contact Oligo for more information - The requested
                         operation cannot be performed for the current status of
                         the agreement
                     code:
@@ -5612,7 +5589,7 @@ components:
                       type: string
                       description: A longer description of the reason or failure
                       example: >-
-                        Contact Zepto for more information - The requested
+                        Contact Oligo for more information - The requested
                         operation cannot be performed for the current status of
                         the agreement
                     code:
@@ -5697,7 +5674,7 @@ components:
                       type: string
                       description: A longer description of the reason or failure
                       example: >-
-                        Contact Zepto for more information - The requested
+                        Contact Oligo for more information - The requested
                         operation cannot be performed for the current status of
                         the agreement
                     code:
@@ -5765,7 +5742,7 @@ components:
                       type: string
                       description: A longer description of the reason or failure
                       example: >-
-                        Contact Zepto for more information - The requested
+                        Contact Oligo for more information - The requested
                         operation cannot be performed for the current status of
                         the agreement
                     code:
@@ -5876,7 +5853,7 @@ components:
                       type: string
                       description: A longer description of the reason or failure
                       example: >-
-                        Contact Zepto for more information - The requested
+                        Contact Oligo for more information - The requested
                         operation cannot be performed for the current status of
                         the agreement
                     code:
@@ -6082,7 +6059,7 @@ components:
             Supplied unique identifier for payment, maximum 64 characters
             containing only unreserved characters as defined in RFC3986. This
             identifier ensures payment uniqueness between integrator systems and
-            Zepto.
+            us.
           example: biz_20221231_G7MQWwkQZIP8vbfH
           minLength: 1
           maxLength: 64
@@ -6264,7 +6241,7 @@ components:
           type: string
           description: A longer description of the reason or failure
           example: >-
-            Contact Zepto for more information - The requested operation cannot
+            Contact Oligo for more information - The requested operation cannot
             be performed for the current status of the agreement
         code:
           type: string
@@ -6359,7 +6336,7 @@ components:
             Supplied unique identifier for payment, maximum 64 characters
             containing only unreserved characters as defined in RFC3986. This
             identifier ensures payment uniqueness between integrator systems and
-            Zepto.
+            us.
           example: biz_20221231_G7MQWwkQZIP8vbfH
           minLength: 1
           maxLength: 64
@@ -6802,7 +6779,7 @@ components:
           type: string
           description: A longer description of the reason or failure
           example: >-
-            Contact Zepto for more information - The requested operation cannot
+            Contact Oligo for more information - The requested operation cannot
             be performed for the current status of the agreement
         code:
           type: string
@@ -7018,10 +6995,10 @@ components:
             Optional supplied unique identifier for payto payment that will be
             made to complete this refund, maximum 64 characters containing only
             unreserved characters as defined in RFC3986. This identifier ensures
-            payment uniqueness between integrator systems and Zepto. If no uid
-            is provided here, the payto payment that will be made to complete
-            this refund will inherit the uid of this refund as supplied in the
-            `uid` paramater in the top level request object.
+            payment uniqueness between integrator systems and us. If no uid is
+            provided here, the payto payment that will be made to complete this
+            refund will inherit the uid of this refund as supplied in the `uid`
+            paramater in the top level request object.
           example: biz_20221231_G7MQWwkQZIP8vbfH
           minLength: 1
           maxLength: 64
@@ -7057,7 +7034,7 @@ components:
             Supplied unique identifier for refund, maximum 64 characters
             containing only unreserved characters as defined in RFC3986. This
             identifier ensures refund uniqueness between integrator systems and
-            Zepto.
+            us.
           example: biz_refund_20221231_G7MQWwkQZIP8vbfH
           minLength: 1
           maxLength: 64
@@ -7224,7 +7201,7 @@ components:
             Supplied unique identifier for refund, maximum 64 characters
             containing only unreserved characters as defined in RFC3986. This
             identifier ensures refund uniqueness between integrator systems and
-            Zepto.
+            us.
           example: biz_refund_20221231_G7MQWwkQZIP8vbfH
           minLength: 1
           maxLength: 64
